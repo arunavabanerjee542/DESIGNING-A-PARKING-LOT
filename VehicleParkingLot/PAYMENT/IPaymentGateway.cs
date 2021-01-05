@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VehicleParkingLot
+namespace VehicleParkingLot.PAYMENT
 {
-    class Parking
+    interface IPaymentGateway
     {
-        List<ParkingSpot> park;
-
+        void pay();
 
     }
 }

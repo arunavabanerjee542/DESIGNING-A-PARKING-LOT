@@ -4,21 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VehicleParkingLot
+namespace VehicleParkingLot.PAYMENT
 {
-   public class Attendent : ParkingLotUser
+    class Payment
     {
-        public Payment p;
-      
-        public void ProcessTicket()
+        IPaymentGateway paygate;
+
+        public Payment(IPaymentGateway ip)
         {
 
+            paygate = ip;
+
         }
+
 
         public void MakePayment()
         {
-            p.pay();
+            paygate.pay();
         }
+
 
 
     }

@@ -13,7 +13,15 @@
         public int spotid ;
        
         public ParkingSpotStatus ps;
-        public Vehicle vehicle;
+        public VehicleType vt;
+
+        public ParkingSpot(int spot, ParkingSpotStatus pss, VehicleType v)
+        {
+            spotid = spot;
+            ps = pss;
+            vt = v;
+
+        }
 
 
     }

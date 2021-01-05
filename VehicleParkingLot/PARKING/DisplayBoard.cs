@@ -5,7 +5,7 @@ namespace VehicleParkingLot
 {
     public class DisplayBoard
     {
-
+/*
         public void show(List<ParkingSpot> ps)
         {
             var x = ps.Where(y =>(int)y.ps == 1 ).GroupBy(z => z.vehicle.vehicletype);
@@ -16,6 +16,7 @@ namespace VehicleParkingLot
                  }
 
         }
+        */
 
     }
 }

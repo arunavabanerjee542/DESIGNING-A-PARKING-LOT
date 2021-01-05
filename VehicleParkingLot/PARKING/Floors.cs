@@ -11,15 +11,25 @@ namespace VehicleParkingLot
         public DisplayBoard db;
 
 
-        public Floors()
+       
+       
+
+        public Floors(int l)
         {
             parkingspot = new List<ParkingSpot>();
             db = new DisplayBoard();
+            floor_no = l;
         }
 
         public void ShowAvalableSpaces()
         {
-            db.show(parkingspot);
+           // db.show(parkingspot);
+        }
+
+        public void AddParkingSpot(ParkingSpot p)
+        {
+
+            parkingspot.Add(p);
         }
            
 

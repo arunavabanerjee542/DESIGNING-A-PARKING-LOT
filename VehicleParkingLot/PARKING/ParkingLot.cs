@@ -6,12 +6,20 @@ using System.Threading.Tasks;
 
 namespace VehicleParkingLot
 {
-    class ParkingLot
+    public class ParkingLot
     {
 
         public Address address;
         public List<Floors> floors;
         public List<Gate> gates;
+
+
+        public ParkingLot()
+        {
+            address = new Address();
+            floors = new List<Floors>();
+            gates = new List<Gate>();
+        }
 
 
 

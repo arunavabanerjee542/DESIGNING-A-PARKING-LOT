@@ -12,15 +12,26 @@ namespace VehicleParkingLot
 
         public Vehicle v;
 
+        public Customer(int i, string n, Vehicle vehicle)
+        {
+            id = i;
+            name = n;
+            v = vehicle;
+            search = new Search();
+        }
+
+
         public void makePaymenttoAttendent(Attendent attend)
         {
-            attend.pay();
+           // attend.pay();
         }
 
         public void getParkingTicket()
         {
 
         }
+
+
 
     }
 }

@@ -43,17 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Address.cs" />
-    <Compile Include="Admin.cs" />
-    <Compile Include="Attendent.cs" />
-    <Compile Include="Customer.cs" />
-    <Compile Include="DisplayBoard.cs" />
-    <Compile Include="Floors.cs" />
+    <Compile Include="PAYMENT\Cash.cs" />
+    <Compile Include="PAYMENT\CreditCard.cs" />
+    <Compile Include="PAYMENT\DebitCard.cs" />
+    <Compile Include="PAYMENT\IPaymentGateway.cs" />
+    <Compile Include="PAYMENT\Payment.cs" />
+    <Compile Include="PREDEFINED\Predefined.cs" />
+    <Compile Include="USER\Address.cs" />
+    <Compile Include="USER\Admin.cs" />
+    <Compile Include="USER\Attendent.cs" />
+    <Compile Include="USER\Customer.cs" />
+    <Compile Include="PARKING\DisplayBoard.cs" />
+    <Compile Include="PARKING\Floors.cs" />
     <Compile Include="Gate.cs" />
-    <Compile Include="Parking.cs" />
-    <Compile Include="ParkingLot.cs" />
-    <Compile Include="ParkingSpot.cs" />
-    <Compile Include="ParkingLotUser.cs" />
+    <Compile Include="PARKING\ParkingLot.cs" />
+    <Compile Include="PARKING\ParkingSpot.cs" />
+    <Compile Include="USER\ParkingLotUser.cs" />
     <Compile Include="Payment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,5 +68,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
